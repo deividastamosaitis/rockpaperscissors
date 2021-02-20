@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.game {
+  background-color: #001942;
+  height: 100vh;
+  font-family: sans-serif;
+  color: #f5f5f5;
+}
+
+.game .game-score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 30px;
+}
+
+.game .game-score p {
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.game .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 50vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game .intro button {
+  width: 150px;
+  height: 50px;
+  background: none;
+  border: none;
+  color: #f5f5f5;
+  font-size: 20px;
+  background: #851f99;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.game .match {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: opacity 0.5s ease 0.5s;
+  transition: opacity 0.5s ease 0.5s;
+}
+
+.game .match .winner {
+  text-align: center;
+  font-size: 50px;
+}
+
+.game .match .hands .player-hand {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.game .match .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game .match .options button {
+  width: 150px;
+  height: 50px;
+  background: none;
+  border: none;
+  color: #f5f5f5;
+  font-size: 20px;
+  background: #851f99;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.fadeOut {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.fadeIn {
+  opacity: 1;
+  pointer-events: all;
+}
+/*# sourceMappingURL=style.css.map */

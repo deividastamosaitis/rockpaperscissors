@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #B2B2B2;
+  font-family: "Poppins", sans-serif;
+}
+
+body header {
+  color: #FCFAFB;
+  background-color: #38CE85;
+  height: 100px;
+}
+
+body header h1 {
+  margin-left: 80px;
+  vertical-align: middle;
+  line-height: 100px;
+}
+
+body .row nav {
+  background-color: #33435E;
+  padding: 60px;
+  height: 100vh;
+}
+
+body .row nav .nav {
+  text-decoration: none;
+}
+
+body .row nav .nav .nav-link {
+  color: #DCDCDC;
+  margin: 20px;
+  font-size: 1.5rem;
+}
+
+body .row nav .nav .nav-link:hover {
+  color: #FCFAFB;
+}
+
+body .row nav .nav .active {
+  color: #FCFAFB;
+}
+
+body .row main .todo-task {
+  background-color: #FCFAFB;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem;
+  padding: 1rem 2rem 1rem 1rem;
+  position: relative;
+}
+
+body .row main .todo-task p {
+  margin: 0;
+  padding-right: 2rem;
+}
+
+body .row main .todo-task .check {
+  border: 1px solid #33435E;
+  border-radius: 5px;
+  height: 24px;
+  min-width: 24px;
+  position: absolute;
+  right: 0;
+  margin-right: 70px;
+}
+
+body .row main .todo-task .delete {
+  margin-left: auto;
+}
+
+body .row main .todo-task .delete .fas {
+  color: #F22A22;
+  opacity: 50%;
+}
+
+body .row main .todo-task .delete .fas::before {
+  margin-left: 40px;
+}
+/*# sourceMappingURL=style.css.map */

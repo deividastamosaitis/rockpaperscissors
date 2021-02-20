@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game {
+    background-color: #001942;
+    height: 100vh;
+    font-family:sans-serif;
+    color: #f5f5f5;
+    .game-score{
+        display: flex;
+        justify-content: space-around;
+        font-size: 30px;
+        p {
+            text-align: center;
+            padding: 10px;
+            font-size: 30px;
+        }
+    }
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 50vh;
+        align-items: center;
+        button {
+            width: 150px;
+            height: 50px;
+            background: none;
+            border: none;
+            color: #f5f5f5;
+            font-size: 20px;
+            background: #851f99;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    }
+    .match {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: opacity 0.5s ease 0.5s;
+        .winner {
+            text-align: center;
+            font-size: 50px;
+        }
+        .hands {
+            .player-hand {
+                transform: rotateY(180deg);
+            }
+        }
+        .options {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            button {
+                width: 150px;
+                height: 50px;
+                background: none;
+                border: none;
+                color: #f5f5f5;
+                font-size: 20px;
+                background: #851f99;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.fadeOut {
+    opacity: 0;
+    pointer-events: none;
+}
+.fadeIn {
+    opacity: 1;
+    pointer-events: all;
+}

@@ -1,0 +1,78 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $BGColor;
+    font-family: "Poppins", sans-serif;
+    header{
+        color: $fontColor;
+        background-color: $headerColor;
+        height: 100px;
+        h1{
+            margin-left: 80px;
+            vertical-align: middle;
+            line-height: 100px;
+        }
+    }
+    .row{
+        nav{
+            background-color: $navColor;
+            padding: 60px;
+            height: 100vh;
+            .nav{
+                text-decoration: none;
+                .nav-link{
+                    color: $navFontColor;
+                    margin: 20px;
+                    font-size: 1.5rem;
+                    &:hover{
+                        color: $fontColor;
+                    }
+                }
+                .active {
+                    color: $fontColor;
+                }
+            }
+        }
+        main{
+            .todo-task{
+                background-color: $todoTaskBG;
+                border-radius: 10px;
+                display: flex;
+                margin: 2rem;
+                padding: 1rem 2rem 1rem 1rem;
+                position: relative;
+                
+                p{
+                    margin: 0;
+                    padding-right: 2rem;
+                }
+                .check{
+                    border: 1px solid $checkBorderColor;
+                    border-radius: 5px;
+                    height: 24px;
+                    min-width: 24px;
+                    position: absolute;
+                    right: 0;
+                    margin-right: 70px;
+                }
+                .delete{
+                    margin-left: auto;
+                    .fas{
+                        color: $deleteColor;
+                        opacity: 50%;
+                        &::before{
+                            margin-left: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
